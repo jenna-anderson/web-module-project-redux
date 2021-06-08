@@ -6,7 +6,6 @@ import { toggleFavorites } from './../actions/favoritesActions';
 const MovieHeader = (props) => {
     const appTitle = props.appTitle;
     const displayFavorites = props.displayFavorites;
-    console.log(displayFavorites)
 
     const handleClick = () => {
         props.toggleFavorites();

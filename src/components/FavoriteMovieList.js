@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { Link } from 'react-router-dom';
 
-import { removeFavorite, displayFavorites } from './../actions/favoritesActions';
+import { removeFavorite } from './../actions/favoritesActions';
 
 
 const FavoriteMovieList = (props) => {
@@ -31,7 +31,6 @@ const FavoriteMovieList = (props) => {
 const mapStateToProps = (state) => {
     return{
         favorites: state.favorites.favorites,
-        displayFavorites: state.favorites.displayFavorites
     }
 }
 
